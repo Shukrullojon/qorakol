@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="49.6431mm" height="49.6431mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 192.44 192.44"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="671" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Facundo">
+		<font-face-src>
+			<font-face-name name="Facundo"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="Р" horiz-adv-x="634" d="M346.999 703.001c75.3348,0 136.502,-21.8345 183.502,-65.4996 47,-43.669 70.498,-100.169 70.498,-169.5 0,-70.0013 -23.498,-126.833 -70.498,-170.502 -47,-43.6651 -108.167,-65.4996 -183.502,-65.4996l-173.001 0 0 -232 -72.9972 0 0 703.001 245.998 0zm-1.99857 -403.002c54.0009,0 97.8315,15.4998 131.5,46.4993 33.6683,31.0035 50.5004,71.8343 50.5004,122.5 0,49.9998 -16.6666,90.1684 -49.9998,120.502 -33.3332,30.3334 -77.3333,45.4981 -132,45.4981l-171.002 0 0 -334.999 171.002 0z"/>
+   <glyph unicode="у" horiz-adv-x="519" d="M437.999 506.002l77.9995 0 -332 -694.002 -69 0 110 232 -220.998 462.001 77.9995 0 177.999 -384.002 177.999 384.002z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Facundo";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:white;stroke-width:1.03;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:#FEFEFE}
+    .fnt0 {font-weight:normal;font-size:98.34px;font-family:'Facundo'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M96.22 0.51l0 0c52.85,0 95.71,42.86 95.71,95.71l0 0c0,52.85 -42.86,95.71 -95.71,95.71l0 0c-52.85,-0 -95.71,-42.86 -95.71,-95.71l-0 0c0,-52.85 42.86,-95.71 95.71,-95.71z"/>
+  <text x="35.45" y="127.46"  class="fil1 fnt0">Ру</text>
+ </g>
+</svg>
