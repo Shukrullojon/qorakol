@@ -7,7 +7,7 @@
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to ARIF SOLAR</p>
+                <p class="login-box-msg">Sign in to QORAKOL ZIYO</p>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="input-group mb-3">
