@@ -1,0 +1,141 @@
+.tests{
+    background: #F7F9FC;
+}
+
+.tests_card{
+    border-radius: 24px;
+    background: white;
+}
+
+.tests_card_top{
+    background: #2D487D;
+    padding: 40px;
+    border-radius: 24px 24px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tests_csrd_top_text{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: white;
+}
+
+.tests_card_top_num{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: white;
+}
+
+
+.tests_card_bottom{
+    background: white;
+    padding: 46px 60px;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+}
+
+.tests_card_bottom_btns{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tests_card_bottom_btn1, .tests_card_bottom_btn2{
+    padding: 16px 72px ;
+    border-radius: 12px ;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    border: none;
+    background: #2D487D;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+.tests_card_bottom_btn2{
+    background: #F75929;
+    opacity: 1;
+    right: 120px;
+}
+
+.test_question_text{
+    font-size: 28px;
+}
+
+
+/* -------------- */
+
+.question p {
+    font-family: Montserrat;
+    font-size: 28px;
+    color: #333;
+}
+
+form {
+    margin-top: 32px;
+}
+
+.option {
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option input {
+    width: 20px;
+    height: 20px;
+}
+
+.question_text{
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.answers_row{
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.answers_row input{
+    width: 20px;
+    height: 20px;
+}
+
+.answers_row label{
+    font-size: 24px;
+}
+
+.res_name{
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.res_input{
+    padding: 25px;
+    width: 100%;
+    border: 1px solid #dfd7d7;
+    border-radius: 16px;
+    background: #f7f2f2;
+    font-size: 24px;
+    outline: none;
+}

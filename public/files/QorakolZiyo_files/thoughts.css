@@ -1,0 +1,62 @@
+.thoughts_title{
+    max-width: 681px;
+    margin: 0 auto;
+}
+
+.thoughts_box{
+    /* display: flex; */
+    /* gap: 20px; */
+    margin-top: 60px;
+}
+
+.thoughts_box_flex{
+    display: flex;
+    gap: 20px;
+}
+
+.thoughts_card{
+    position: relative;
+    padding: 16px;
+    border: 1px solid #F75929;
+    border-radius: 24px;
+    max-width: 340px;
+    max-height: 506px;
+}
+
+.thoughts_card:nth-last-child(2n-1){
+    margin-top: 80px;
+}
+
+.thoughts_card_btn{
+    position: relative;
+}
+
+.thoughts_card_img{
+    margin-bottom: 20px;
+}
+
+.thoughts_card_img img{
+    border-radius: 24px;
+}
+
+.thoughts_card_title{
+    font-family: Bebas Neue;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    color: #F75929;
+}
+
+.thoughts_card_text{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #2D487D;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,246 @@
+.experience_title {
+    color: #F75929;
+    max-width: 813px;
+    margin: 0 auto;
+    text-align: center;
+    /* Matnni markazga joylashtiramiz */
+}
+
+.experience_title span {
+    color: #2D487D;
+}
+
+.experience_cards {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience_card {
+    border: 1px solid #F75929;
+    border-radius: 24px;
+    padding: 20px;
+    width: 320px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Yengil soyalar qo‘shamiz */
+}
+
+.experience_card_img img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.experience_card_img {
+    position: relative;
+}
+
+.experience_size {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    background: #F75929;
+    width: 85px;
+    height: 85px;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience_size span {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.experience_size p {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+}
+
+.experience_teacher_name {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #F75929;
+    margin-bottom: 4px;
+    margin-top: 16px;
+}
+
+.experience_teacher_science {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2D487D;
+}
+
+/* Swiper specific styling */
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #F75929;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #2D487D;
+}
+
+.swiper-pagination-bullet {
+    background-color: #F75929 !important;
+    opacity: 1;
+    display: none;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2D487D !important;
+}
+
+.swiper-scrollbar {
+    background-color: #F75929;
+}
+
+
+
+/* ---------------------------- */
+
+
+
+.card-wrapper {
+    padding-left: 250px;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    display: block;
+    background: #fff;
+    /* padding: 18px; */
+    user-select: none;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    width: fit-content;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    font-weight: 500;
+    background: #DDE4FF;
+    margin: 16px 0 18px;
+}
+
+.card-list .card-link .badge-designer {
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge-marketer {
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.card-list .card-link .badge-gamer {
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+.card-list .card-link .badge-editor {
+    color: #856404;
+    background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+    color: #000;
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}

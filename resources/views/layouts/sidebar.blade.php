@@ -16,14 +16,14 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("center.index") }}" class="nav-link {{ Request::is('admin/center*') ? "active":'' }}">
                         <i class="fa fa-info-circle"></i>
                         <p>Markaz Haqida</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("advantage.index") }}" class="nav-link {{ Request::is('admin/advantage*') ? "active":'' }}">
                         <i class="fa fa-expand-alt"></i>
                         <p>Ustunligimiz</p>
                     </a>
