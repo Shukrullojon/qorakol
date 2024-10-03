@@ -10,7 +10,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::prefix('admin')->group(function () {
         Route::get('/', [App\Http\Controllers\HomeController::class, 'profile'])->name("profile");
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
-        /*Route::resource('about', \App\Http\Controllers\AboutController::class);*/
+        Route::resource('school', \App\Http\Controllers\SchoolController::class);
     });
 });
 
