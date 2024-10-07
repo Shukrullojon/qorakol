@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Advantage extends Model
+class Feadback extends Model
 {
     use HasFactory;
 
-    protected $table = 'advantages';
+    protected $table = 'feadbacks';
 
     protected $guarded = [];
 

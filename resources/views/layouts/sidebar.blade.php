@@ -30,30 +30,30 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("partner.index") }}" class="nav-link {{ Request::is('admin/partner*') ? "active":'' }}">
                         <i class="fa fa-users-cog"></i>
                         <p>Hamkorlarimiz</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("feadback.index") }}" class="nav-link {{ Request::is('admin/feadback*') ? "active":'' }}">
                         <i class="fa fa-cloud"></i>
                         <p>Fikrlar</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("cource.index") }}" class="nav-link {{ Request::is('admin/cource*') ? "active":'' }}">
                         <i class="fa fa-atom"></i>
                         <p>Kurslar</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("question.index") }}" class="nav-link {{ Request::is('admin/question*') ? "active":'' }}">
                         <i class="fa fa-check"></i>
-                        <p>Test Bo'limi</p>
+                        <p>Testlar</p>
                     </a>
                 </li>
 

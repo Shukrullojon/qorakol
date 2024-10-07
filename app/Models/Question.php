@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Advantage extends Model
+class Question extends Model
 {
     use HasFactory;
 
-    protected $table = 'advantages';
+    protected $table = 'questions';
 
     protected $guarded = [];
 
@@ -18,4 +18,10 @@ class Advantage extends Model
         0 => "Arxive ❌",
     ];
 
+    static $answers = [
+        1 => "A",
+        2 => "B",
+        3 => "C",
+        4 => "D",
+    ];
 }
