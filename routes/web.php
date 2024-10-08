@@ -19,6 +19,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::resource('question', \App\Http\Controllers\QuestionController::class);
         Route::resource('filial', \App\Http\Controllers\FilialController::class);
         Route::resource('teacher', \App\Http\Controllers\TeacherController::class);
+        Route::resource('ask', \App\Http\Controllers\AskController::class);
     });
 });
 

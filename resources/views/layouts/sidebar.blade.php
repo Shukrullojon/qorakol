@@ -72,7 +72,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("ask.index") }}" class="nav-link {{ Request::is('admin/ask*') ? "active":'' }}">
                         <i class="fa fa-question"></i>
                         <p>So'raladigan Savollar</p>
                     </a>
