@@ -58,14 +58,14 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("filial.index") }}" class="nav-link {{ Request::is('admin/filial*') ? "active":'' }}">
                         <i class="fa fa-code-branch"></i>
                         <p>Filiallar</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("teacher.index") }}" class="nav-link {{ Request::is('admin/teacher*') ? "active":'' }}">
                         <i class="fa fa-chalkboard-teacher"></i>
                         <p>O'qituvchilar</p>
                     </a>

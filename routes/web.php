@@ -17,6 +17,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::resource('feadback', \App\Http\Controllers\FeadbackController::class);
         Route::resource('cource', \App\Http\Controllers\CourceController::class);
         Route::resource('question', \App\Http\Controllers\QuestionController::class);
+        Route::resource('filial', \App\Http\Controllers\FilialController::class);
+        Route::resource('teacher', \App\Http\Controllers\TeacherController::class);
     });
 });
 
