@@ -20,6 +20,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::resource('filial', \App\Http\Controllers\FilialController::class);
         Route::resource('teacher', \App\Http\Controllers\TeacherController::class);
         Route::resource('ask', \App\Http\Controllers\AskController::class);
+        Route::resource('new', \App\Http\Controllers\NewController::class);
     });
 });
 

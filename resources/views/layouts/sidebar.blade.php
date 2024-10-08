@@ -79,7 +79,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ Request::is('admin/about*') ? "active":'' }}">
+                    <a href="{{ route("new.index") }}" class="nav-link {{ Request::is('admin/new*') ? "active":'' }}">
                         <i class="fa fa-newspaper"></i>
                         <p>Yangiliklar</p>
                     </a>
