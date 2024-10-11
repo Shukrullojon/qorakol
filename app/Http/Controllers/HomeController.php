@@ -10,6 +10,7 @@ use App\Models\News;
 use App\Models\Partner;
 use App\Models\Question;
 use App\Models\Review;
+use App\Models\School;
 use App\Models\Work;
 use Illuminate\Http\Request;
 use Revolution\Google\Sheets\Facades\Sheets;
@@ -19,8 +20,9 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
+        $schools = School::all();
         return view('index',[
-
+            'schools' => $schools
         ]);
     }
 
