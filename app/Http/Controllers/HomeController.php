@@ -28,7 +28,6 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
-
         $schools = School::get();
         $center = Center::first();
         $advantages = Advantage::where('status',1)->get();
@@ -53,6 +52,17 @@ class HomeController extends Controller
             'asks' => $asks,
             'news' => $news,
         ]);
+    }
+
+    public function notification(Request $request)
+    {
+        $text = "Fio: ".$request->name."\n";
+        $text .= "Phone: ".$request->phone."\n";
+        Http::post('https://api.telegram.org/bot'.config('custom.bot_token').'/sendMessage',[
+            'chat_id' => config('custom.group_id'),
+            'text' => $text,
+        ]);
+        return redirect()->back();
     }
 
     public function home()

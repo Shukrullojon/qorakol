@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Qorakol Ziyo</title>
-    <link rel="icon" href="{{ asset("front/image/logo.png")}}" />
+    <link rel="icon" href="{{ asset("front/image/logo.png")}}"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{{ asset("front/css/style.css")}}"/>
     <link rel="stylesheet" href="{{ asset("front/css/hero.css")}}"/>
     <link rel="stylesheet" href="{{ asset("front/css/p_maktab.css")}}"/>
@@ -36,7 +38,7 @@
         <div class="nav__logo">
             <div class="nav__logo__img reveal">
                 <a href="">
-                    <img src="{{ asset("front/image/navbar/vk_logo.svg")}}" alt="" />
+                    <img src="{{ asset("front/image/navbar/vk_logo.svg")}}" alt=""/>
                 </a>
             </div>
             <p class="nav__text reveal">
@@ -88,15 +90,17 @@
         </div>
         <div class="nav_modall">
             <div class="nav_modall_register">
-                <form action="" method="GET">
-                    <input class="enroll_box_name nav_modal_inp_name" type="text" name="" id="" placeholder="Ismingizni kiriting" required/>
+                <form action="{{ route("notification") }}" method="POST">
+                    @csrf
+                    <input class="enroll_box_name nav_modal_inp_name" type="text" name="name" id="" placeholder="Ismingizni kiriting" required/>
                     <div class="enroll_box_phon phone-input reveal">
                         <img class="phone-flag" src="{{ asset("front/image/enroll/uzbekistan.svg")}}" alt=""/>
                         <label style="color: black" for="phoneInput">+998</label>
-                        <input type="text" id="phoneInput" placeholder="(__) ___-__-__" oninput="maskPhoneInput(this)" required minlength="14" maxlength="14"/>
+                        <input type="text" name="phone" id="phoneInput" placeholder="(__) ___-__-__"
+                               oninput="maskPhoneInput(this)" required minlength="14" maxlength="14"/>
                     </div>
                     <button class="close_nav_modall">Yopish</button>
-                    <button type="submit" class="enroll_box_btn">Jo'natish</button>
+                    <button type="submit" name="submited" value="submited" class="enroll_box_btn">Jo'natish</button>
                 </form>
             </div>
         </div>
@@ -110,7 +114,7 @@
         <div class="footer_box">
             <div class="footer_top">
                 <div class="footer_logo">
-                    <img class="reveal" src="{{ asset("front/image/footer/Qorakol logo.svg") }}" alt="" />
+                    <img class="reveal" src="{{ asset("front/image/footer/Qorakol logo.svg") }}" alt=""/>
                     <p class="reveal">
                         Prezident va ixtisoslashtirilgan maktablariga tayyorlovchi
                         yetakchi o’quv markaz
@@ -139,9 +143,9 @@
                     <div class="footer_tarmoqlar">
                         <h4>Ijtimoiy tarmoqlar</h4>
                         <div>
-                            <img src="{{ asset("front/image/footer/telegram.svg") }}" alt="" />
-                            <img src="{{ asset("front/image/footer/instagram.svg")}}" alt="" />
-                            <img src="{{ asset("front/image/footer/youtube.svg")}}" alt="" />
+                            <img src="{{ asset("front/image/footer/telegram.svg") }}" alt=""/>
+                            <img src="{{ asset("front/image/footer/instagram.svg")}}" alt=""/>
+                            <img src="{{ asset("front/image/footer/youtube.svg")}}" alt=""/>
                         </div>
                     </div>
                 </div>

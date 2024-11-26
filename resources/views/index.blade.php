@@ -454,31 +454,18 @@
                         bo‘ling. Farzandingizga fikrlashni o‘rgatamiz.
                     </h2>
                     <div class="enroll_box_respons">
-                        <input
-                            class="enroll_box_name reveal"
-                            type="text"
-                            name=""
-                            id=""
-                            placeholder="Ismingizni kiriting"
-                        />
-                        <div class="enroll_box_phon phone-input reveal">
-                            <img
-                                class="phone-flag"
-                                src="image/enroll/uzbekistan.svg"
-                                alt=""
-                            />
-                            <label style="color: black" for="phoneInput">+998</label>
-                            <input
-                                type="text"
-                                id="phoneInput"
-                                placeholder="(__) ___-__-__"
-                                oninput="maskPhoneInput(this)"
-                                maxlength="14"
-                            />
-                        </div>
-                        <button class="enroll_box_btn reveal">
-                            Bepul darsga yozilish
-                        </button>
+                        <form action="{{ route("notification") }}" method="POST">
+                            @csrf
+                            <input class="enroll_box_name reveal" type="text" name="name" id="" placeholder="Ismingizni kiriting"/>
+                            <div class="enroll_box_phon phone-input reveal">
+                                <img class="phone-flag" src="image/enroll/uzbekistan.svg" alt=""/>
+                                <label style="color: black" for="phoneInput">+998</label>
+                                <input type="text" name="phone" id="phoneInput" placeholder="(__) ___-__-__" oninput="maskPhoneInput(this)" maxlength="14"/>
+                            </div>
+                            <button class="enroll_box_btn reveal" type="submit">
+                                Bepul darsga yozilish
+                            </button>
+                        </form>
                     </div>
                     <p class="enroll_operator reveal">
                         Siz bilan tez orada bizning mutaxassislarimiz bog’lanishadi
