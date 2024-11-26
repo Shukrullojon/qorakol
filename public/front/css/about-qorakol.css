@@ -1,0 +1,297 @@
+.qorakol_title {
+    font-family: Bebas Neue;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    color: #F75929;
+    margin-bottom: 40px;
+}
+
+.qorakol {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left_content {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #2D487D;
+}
+
+.qorakol_btn_students {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 24px;
+}
+
+.qorakol_btn {
+    padding: 21px;
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.stats {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #2D487D;
+}
+
+.studet_size {
+    color: #F75929;
+}
+
+
+.qorakol_students_size{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qorakol_students{
+    display: flex;
+}
+
+.qorakol_students_img1{
+    z-index: 1;
+}
+
+.qorakol_students_img2{
+    z-index: 2;
+    margin-left: -15px;
+}
+
+.qorakol_students_img3{
+    z-index: 3;
+    margin-left: -15px;
+}
+
+
+
+.right_content {
+    position: relative;
+}
+
+.right_content img {
+    border-radius: 24px;
+    width: 100%;
+}
+
+.right_content_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right_content_btn button{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.vido_iframe{
+    display: none;
+    position: fixed;
+    background: rgb(92, 85, 85, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000000;
+    opacity: 0;
+    transition: opacity .5s ease;
+
+}
+
+.vido_iframe iframe{
+    width:860px;
+    height:515px
+}
+
+
+.vido_iframe iframe{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000001;
+}
+
+.iframe_close{
+    top: 50px;
+    z-index: 1000002;
+    background: #726a6a;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+.iframe_close img{
+    width: 60px;
+}
+
+.show_iframe{
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+@media (max-width:1170px) {
+
+    .qorakol_btn{
+        padding: 16px 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .vido_iframe iframe {
+        width: 600px;
+        height: 415px
+    }
+
+
+    .iframe_close {
+        height: 50px;
+        width: 50px;
+    }
+
+    .iframe_close img {
+        width: 40px;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .left_content p{
+        font-size: 15px;
+    }
+    .qorakol_title{
+        font-size: 35px;
+    }
+
+    .right_content_btn button {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width:980px) {
+    .qorakol_btn_students{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media (max-width:900px) {
+    #about_qorakol{
+        padding-bottom: 200px;
+    }
+
+    .qorakol{
+      display: block;
+      padding-bottom: 100px;
+      position: relative;
+    }
+
+    .right_content{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .qorakol_btn_students{
+        position: absolute;
+        bottom: -60px;
+        width: 100%;
+    }
+
+    .qorakol_title{
+        font-size: 30px;
+    }
+
+        .right_content_btn button {
+            width: 60px;
+            height: 60px;
+        }
+}
+
+@media (max-width:756px) {
+    .vido_iframe iframe {
+        width: 500px;
+        height: 315px
+    }
+
+
+    .iframe_close {
+        top: 150px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .iframe_close img {
+        width: 40px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .vido_iframe iframe {
+        width: 340px;
+        height: 215px
+    }
+
+
+    .iframe_close {
+        height: 40px;
+        width: 40px;
+    }
+
+    .iframe_close img {
+        width: 35px;
+    }
+}
+
+
+@media (max-width:550px) {
+    .right_content_btn button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:450px) {
+    .vido_iframe iframe {
+        width: 300px;
+        height: 215px
+    }
+}
