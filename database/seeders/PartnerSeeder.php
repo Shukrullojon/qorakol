@@ -15,43 +15,51 @@ class PartnerSeeder extends Seeder
     {
         $datas = [
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "behance.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "dribbble.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "behance.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "dribbble.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "behance.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "dribbble.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "behance.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "dribbble.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "dribbble.png",
                 'status' => 1,
             ],
             [
-                'image' => "Google_2015_logo.svg.webp",
+                'image' => "dribbble.png",
+                'status' => 1,
+            ],
+            [
+                'image' => "dribbble.png",
+                'status' => 1,
+            ],
+            [
+                'image' => "dribbble.png",
                 'status' => 1,
             ],
         ];

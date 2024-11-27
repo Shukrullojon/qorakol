@@ -19,7 +19,7 @@ class FilialSeader extends Seeder
                 "info" => "Toshkent shahar, Yunusobod tumani Shahriston metro, Anor Plaza, 3-qavat",
                 "google" => "google.com",
                 "yandex" => "yandex.com",
-                "image" => "talim.png",
+                "image" => "branchs.png",
                 "status" => 1,
             ],
             [
@@ -27,7 +27,7 @@ class FilialSeader extends Seeder
                 "info" => "Toshkent shahar, Yunusobod tumani Shahriston metro, Anor Plaza, 3-qavat",
                 "google" => "google.com",
                 "yandex" => "yandex.com",
-                "image" => "talim.png",
+                "image" => "branchs.png",
                 "status" => 1,
             ],
             [
@@ -35,7 +35,7 @@ class FilialSeader extends Seeder
                 "info" => "Toshkent shahar, Yunusobod tumani Shahriston metro, Anor Plaza, 3-qavat",
                 "google" => "google.com",
                 "yandex" => "yandex.com",
-                "image" => "talim.png",
+                "image" => "branchs.png",
                 "status" => 1,
             ],
         ];

@@ -170,7 +170,7 @@
 
 @if(Session::get('success'))
     <script>
-            toastr.success("Siz bilan tez orada bizning mutaxassislarimiz bog’lanishadi");
+        toastr.success("Siz bilan tez orada mutaxassislarimiz bog‘lanishadi!");
     </script>
 @endif
 
