@@ -273,7 +273,7 @@
                 </div>
                 <div class="vido_iframe">
                     <buttom class="iframe_close">
-                        <img src="image/news/plus.svg" alt="" />
+                        <img src="{{ assert("front/image/news/plus.svg") }}" alt="" />
                     </buttom>
                     <iframe
                         width="860"
@@ -458,7 +458,7 @@
                             @csrf
                             <input class="enroll_box_name reveal" type="text" name="name" id="" placeholder="Ismingizni kiriting"/>
                             <div class="enroll_box_phon phone-input reveal">
-                                <img class="phone-flag" src="image/enroll/uzbekistan.svg" alt=""/>
+                                <img class="phone-flag" src="{{ asset("front/image/enroll/uzbekistan.svg") }}" alt=""/>
                                 <label style="color: black" for="phoneInput">+998</label>
                                 <input type="text" name="phone" id="phoneInput" placeholder="(__) ___-__-__" oninput="maskPhoneInput(this)" maxlength="14"/>
                             </div>
