@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="{{ asset("front/css/news.css")}}"/>
     <link rel="stylesheet" href="{{ asset("front/css/footer.css")}}"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 </head>
 <body>
 
@@ -163,6 +165,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/inputmask.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+@if(Session::get('success'))
+    <script>
+            toastr.success("Siz bilan tez orada bizning mutaxassislarimiz bog’lanishadi");
+    </script>
+@endif
 
 </body>
 </html>

@@ -453,8 +453,8 @@
                         Bepul sinov testiga yoziling va bizda o‘qish imkoniyatiga ega
                         bo‘ling. Farzandingizga fikrlashni o‘rgatamiz.
                     </h2>
-                    <div class="enroll_box_respons">
-                        <form action="{{ route("notification") }}" method="POST">
+                    <div>
+                        <form action="{{ route("notification") }}" method="POST" class="enroll_box_respons">
                             @csrf
                             <input class="enroll_box_name reveal" type="text" name="name" id="" placeholder="Ismingizni kiriting"/>
                             <div class="enroll_box_phon phone-input reveal">

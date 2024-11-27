@@ -58,11 +58,14 @@ class HomeController extends Controller
     {
         $text = "Fio: ".$request->name."\n";
         $text .= "Phone: ".$request->phone."\n";
-        Http::post('https://api.telegram.org/bot'.config('custom.bot_token').'/sendMessage',[
+        $token = (string)config("custom.bot_token");
+        $group_id=config("custom.group_id");
+        Http::get("https://api.telegram.org/bot7853306039:AAFxRgytHG4kcn1qZDmgpeyxLbu_UBjC9_0/sendMessage?chat_id=$group_id&text=$text");
+        /*Http::post('https://api.telegram.org/bot'.config('custom.bot_token').'/sendMessage',[
             'chat_id' => config('custom.group_id'),
             'text' => $text,
-        ]);
-        return redirect()->back();
+        ]);*/
+        return redirect()->back()->with("success","hello");
     }
 
     public function home()
