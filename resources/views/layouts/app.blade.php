@@ -7,8 +7,8 @@
 
     <meta property="og:title" content="Qorakol Ziyo">
     <meta property="og:description" content="Farzandingizni prezident maktablariga biz bilan tayyorlang">
-    <meta property="og:image" content="{{ asset("front/image/logo.png")}}">
-    <meta property="og:url" content="https://qorakolziyo.uz">
+    <meta property="og:image" content="https://qorakolziyo.uz/front/image/about qorakol/qorakol.png">
+    <meta property="og:url" content="{{ url("/") }}">
     <meta property="og:type" content="website">
 
     <title>Qorakol Ziyo</title>
