@@ -134,9 +134,11 @@
                 <div class="filiallar reveal">
                     <h4>Filiallarimiz</h4>
                     <ul>
-                        <li><a href="">Shahriston filiali</a></li>
-                        <li><a href="">Chorsu filiali</a></li>
-                        <li><a href="">Olmazor filiali</a></li>
+                        @if(count($filials))
+                            @foreach($filials as $filial)
+                                <li><a href="">{{ $filial->name }}</a></li>
+                            @endforeach
+                        @endif
                     </ul>
                 </div>
                 <div class="footer_contact reveal">
@@ -145,9 +147,9 @@
                     <div class="footer_tarmoqlar">
                         <h4>Ijtimoiy tarmoqlar</h4>
                         <div>
-                            <img src="{{ asset("front/image/footer/telegram.svg") }}" alt=""/>
-                            <img src="{{ asset("front/image/footer/instagram.svg")}}" alt=""/>
-                            <img src="{{ asset("front/image/footer/youtube.svg")}}" alt=""/>
+                            <a href="https://t.me/qorakolziyo"><img src="{{ asset("front/image/footer/telegram.svg") }}" alt=""/></a>
+                            <a href="https://www.instagram.com/qorakolziyo"><img src="{{ asset("front/image/footer/instagram.svg")}}" alt=""/></a>
+                            <a href="https://www.youtube.com/@qorakolziyooquvmarkazi1029"><img src="{{ asset("front/image/footer/youtube.svg")}}" alt=""/></a>
                         </div>
                     </div>
                 </div>
