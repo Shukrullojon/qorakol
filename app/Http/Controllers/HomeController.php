@@ -34,7 +34,6 @@ class HomeController extends Controller
         $partners = Partner::where('status',1)->get();
         $feadbacks = Feadback::where('status',1)->get();
         $cources = Cource::where('status',1)->get();
-        $questions = Question::where('status',1)->get();
         $filials = Filial::where('status',1)->get();
         $teachers = Teacher::where('status',1)->get();
         $asks = Ask::where('status',1)->get();

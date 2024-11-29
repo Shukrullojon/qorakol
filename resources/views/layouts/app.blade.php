@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="{{ asset("front/css/enroll.css")}}"/>
     <link rel="stylesheet" href="{{ asset("front/css/news.css")}}"/>
     <link rel="stylesheet" href="{{ asset("front/css/footer.css")}}"/>
+    <link rel="stylesheet" href="{{ asset("front/css/loading.css")}}"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
@@ -171,6 +172,7 @@
 <script src="{{ asset("front/js/partners.js")}}"></script>
 <script src="{{ asset("front/js/news.js")}}"></script>
 <script src="{{ asset("front/js/thoughts.js")}}"></script>
+<script src="{{ asset("front/js/loading.js")}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/inputmask.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -182,6 +184,118 @@
         toastr.success("Siz bilan tez orada mutaxassislarimiz bog‘lanishadi!");
     </script>
 @endif
+<script>
+    const questions = @json($questions);
+    /*const questions = [
+        // 11-savol: Ism
+        {
+            question: "Ismingiz?",
+            inputType: "text",
+            placeholder: "Ismingiz",
+        },
+        // 12-savol: Telefon
+        {
+            question: "Telefon raqamingiz?",
+            inputType: "tel",
+            placeholder: "+998991234567",
+        },
+        // 13-savol: Shahar
+        {
+            question: "Qaysi shaharda yashaysiz?",
+            inputType: "select",
+            options: ["Toshkent", "Samarqand", "Buxoro", "Andijon", "Farg'ona"],
+        },
+    ];*/
+    let currentQuestionIndex = 0;
+    function showQuestion() {
+        const quizQuestion = document.getElementById("quizQuestion");
+        const stepCounter = document.getElementById("stepCounter");
+        if (currentQuestionIndex < questions.length) {
+            const questionData = questions[currentQuestionIndex];
+            if (questionData.options) {
+                const options = questionData.options
+                    .map((option, index) => {
+                        const isChecked =
+                            questionData.selectedAnswer === option ? "checked" : "";
+                        return `
+                <div class='answers_row'>
+                    <input type="radio" id="option${index}" name="quizOption" value="${option}" ${isChecked} />
+                    <label for="option${index}">${option}</label>
+                </div>`;
+                    })
+                    .join("");
+                quizQuestion.innerHTML = `
+                <p>${questionData.question}</p>
+                ${options}
+            `;
+            } else {
+                quizQuestion.innerHTML = `
+                <input class='res_input' id="phoneInput"  type="${questionData.inputType}" placeholder="${questionData.placeholder}" required />
+            `;
+            }
+            stepCounter.textContent = `${currentQuestionIndex + 1}/${
+                questions.length
+            }`;
+        } else {
+            quizQuestion.innerHTML =
+                "<p>Tabriklaymiz! Siz testni muvaffaqiyatli yakunladingiz.</p>";
+        }
+    }
+    document.querySelector(".nextBtn").addEventListener("click", function () {
+        const selectedOption = document.querySelector(
+            'input[name="quizOption"]:checked'
+        );
+        const currentQuestion = questions[currentQuestionIndex];
+        const inputField = document.querySelector(".res_input");
+        if (currentQuestionIndex < 10 && !selectedOption) {
+            alert("Iltimos, javobni tanlang!");
+            return;
+        }
+        // 1. Javob tanlanmagan bo'lsa yoki input bo'sh bo'lsa, xabar chiqadi
+        if (currentQuestion.options && !selectedOption) {
+            alert("Iltimos, javobni tanlang!");
+            return;
+        } else if (
+            !currentQuestion.options &&
+            inputField &&
+            !inputField.value.trim()
+        ) {
+            alert("Iltimos, maydonni to'ldiring!");
+            return;
+        }
+        // 2. Javob yoki qiymatni saqlash
+        if (currentQuestion.options && selectedOption) {
+            currentQuestion.selectedAnswer = selectedOption.value;
+        } else if (!currentQuestion.options && inputField) {
+            currentQuestion.answer = inputField.value.trim(); // Input maydoni qiymatini saqlash
+        }
+        if (selectedOption) {
+            questions[currentQuestionIndex].selectedAnswer = selectedOption.value;
+        }
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            showQuestion();
+        }
+        // 3. Keyingi savolga o'tish yoki yakuniy xabarni ko'rsatish
+        if (currentQuestionIndex < questions.length - 1) {
+            showQuestion();
+        } else {
+            // Hamma savollarga javob berilganidan so'ng yakuniy xabarni ko'rsatish
+            document.getElementById("quizQuestion").innerHTML = `
+            <p>Tabriklaymiz! Siz testni muvaffaqiyatli yakunladingiz.</p>
+        `;
+            document.querySelector(".nextBtn").style.display = "none";
+            document.querySelector(".backBtn").style.display = "none";
+        }
 
+    });
+    document.querySelector(".backBtn").addEventListener("click", function () {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            showQuestion();
+        }
+    });
+    showQuestion();
+</script>
 </body>
 </html>

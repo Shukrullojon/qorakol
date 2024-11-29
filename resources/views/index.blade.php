@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+    <!-- Loading start -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <!-- Loading end -->
 
     <main>
         <section class="hero">
