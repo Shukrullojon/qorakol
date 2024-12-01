@@ -6,6 +6,7 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::post('/notification', [App\Http\Controllers\HomeController::class, 'notification'])->name("notification");
+Route::post('/sendTestResult', [App\Http\Controllers\HomeController::class, 'sendTestResult'])->name("sendTestResult");
 
 Route::group(['middleware' => ['auth']], function () {
     Route::prefix('admin')->group(function () {

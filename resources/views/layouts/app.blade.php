@@ -185,8 +185,8 @@
     </script>
 @endif
 <script>
-    const questions = @json($questions);
-    /*const questions = [
+    const back_questions = @json($questions);
+    const additional = [
         // 11-savol: Ism
         {
             question: "Ismingiz?",
@@ -205,7 +205,9 @@
             inputType: "select",
             options: ["Toshkent", "Samarqand", "Buxoro", "Andijon", "Farg'ona"],
         },
-    ];*/
+    ];
+    const questions = [...back_questions, ...additional];
+    const length = questions.length - 3;
     let currentQuestionIndex = 0;
     function showQuestion() {
         const quizQuestion = document.getElementById("quizQuestion");
@@ -247,7 +249,7 @@
         );
         const currentQuestion = questions[currentQuestionIndex];
         const inputField = document.querySelector(".res_input");
-        if (currentQuestionIndex < 10 && !selectedOption) {
+        if (currentQuestionIndex < length && !selectedOption) {
             alert("Iltimos, javobni tanlang!");
             return;
         }
@@ -272,6 +274,7 @@
         if (selectedOption) {
             questions[currentQuestionIndex].selectedAnswer = selectedOption.value;
         }
+
         if (currentQuestionIndex < questions.length - 1) {
             currentQuestionIndex++;
             showQuestion();
@@ -281,6 +284,19 @@
             showQuestion();
         } else {
             // Hamma savollarga javob berilganidan so'ng yakuniy xabarni ko'rsatish
+            // send backend information
+            console.log(questions);
+            $.ajax({
+                headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                type:'POST',
+                url:'{{ route('sendTestResult') }}',
+                data:{
+                    'result' : questions
+                },
+                success:function(data) {
+                    console.log(data);
+                }
+            });
             document.getElementById("quizQuestion").innerHTML = `
             <p>Tabriklaymiz! Siz testni muvaffaqiyatli yakunladingiz.</p>
         `;
