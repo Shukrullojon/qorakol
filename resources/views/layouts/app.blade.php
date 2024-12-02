@@ -207,7 +207,7 @@
         },
     ];
     const questions = [...back_questions, ...additional];
-    const length = questions.length - 2;
+    const length = questions.length - 3;
     let currentQuestionIndex = 0;
     function showQuestion() {
         const quizQuestion = document.getElementById("quizQuestion");
@@ -298,7 +298,8 @@
                 }
             });
             document.getElementById("quizQuestion").innerHTML = `
-            <p>Tabriklaymiz! Siz testni muvaffaqiyatli yakunladingiz.</p>
+            <p>Tabriklaymiz! Siz testdan muvaffaqiyatli o'tdingiz! 🎉</p>
+            <p>Xodimlarimiz tez orada siz bilan aloqaga chiqadi</p>
         `;
             document.querySelector(".nextBtn").style.display = "none";
             document.querySelector(".backBtn").style.display = "none";
