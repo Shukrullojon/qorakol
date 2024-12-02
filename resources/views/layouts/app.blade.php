@@ -74,7 +74,7 @@
             </li>
             <li class="navbar__contact_list reveal">
                 <div class="nav__contact">
-                    <a href="tel:+99899999964400">+998 99 99 996 44 00</a>
+                    <a href="tel:+998999964400">+998 99 996 44 00</a>
                     <span>Biz bilan bog‘laning</span>
                 </div>
             </li>
@@ -86,7 +86,7 @@
         </ul>
         <div class="navbar__contact">
             <div class="nav__contact reveal">
-                <a href="tel:+99899999964400">+998 99 99 996 44 00</a>
+                <a href="tel:+998999964400">+998 99 996 44 00</a>
                 <span>Biz bilan bog‘laning</span>
             </div>
             <button class="nav__btn btn nav_btn_modall reveal">
@@ -207,7 +207,7 @@
         },
     ];
     const questions = [...back_questions, ...additional];
-    const length = questions.length - 3;
+    const length = questions.length - 2;
     let currentQuestionIndex = 0;
     function showQuestion() {
         const quizQuestion = document.getElementById("quizQuestion");

@@ -90,7 +90,7 @@ class HomeController extends Controller
         }
         $text .= "correct: ".$correct."\n";
         $text .= "incorrect: ".$incorrect."\n";
-        $group_id= config("custom.group_id");
+        $group_id = 7127685003; //config("custom.group_id");
         Http::get("https://api.telegram.org/bot7853306039:AAFxRgytHG4kcn1qZDmgpeyxLbu_UBjC9_0/sendMessage?chat_id=$group_id&text=$text");
         return response()->json([
             'status' => true,

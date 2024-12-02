@@ -1,0 +1,146 @@
+.footer{
+    background: #F7F9FC;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_logo p{
+    max-width: 288px;
+    margin-top: 24px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #2D487D;
+}
+
+.footer_top h4{
+    margin-bottom: 12px;
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #F75929;
+}
+
+.footer_top ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer_top ul>li{
+    list-style: none;
+}
+
+.footer_top a{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #2D487D;
+    text-decoration: none;
+}
+
+.footer_tarmoqlar{
+    margin-top: 16px;
+}
+
+.footer_tarmoqlar div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer_bottom{
+margin-top: 60px;
+text-align: center;
+}
+
+.footer_bottom p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #2D487D;
+}
+
+.footer_bottom p>span{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #F75929;
+    text-decoration: underline;
+}
+
+@media (max-width:700px) {
+    .footer_top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+    
+    .footer_top a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    
+    .footer_logo p {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer_top h4 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .footer_logo img{
+        width: 150px;
+    }
+
+    .footer_bottom p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:480px) {
+    .footer_top a {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .footer_logo p {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer_top h4 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .footer_logo img {
+        width: 130px;
+    }
+    
+    .footer_bottom p {
+        font-size: 14px;
+    }
+}

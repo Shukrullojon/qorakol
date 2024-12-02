@@ -43,7 +43,6 @@
 
         <!-- Hero End -->
         <!-- P-Maktab Start -->
-
         @if(count($schools))
             <section class="section p_maktab">
                 <div class="container">
@@ -85,7 +84,6 @@
                 </div>
             </section>
         @endif
-
         <!-- P-Maktab End -->
 
         <!-- About Qorakol Start -->

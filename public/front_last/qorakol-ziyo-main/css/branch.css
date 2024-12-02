@@ -1,0 +1,152 @@
+.branch_card_title {
+    font-family: Bebas Neue;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    color: #F75929;
+    margin-top: 16px;
+}
+
+.branch {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.branch_card {
+    border: 1px solid #F75929;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 5.5px 0.5px 15px #dbcdcd;
+    
+}
+
+.branch_img {
+    position: relative;
+}
+
+.branch_img img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.branch_location {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.branch_location div {
+    background: white;
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.branch_location_google ,
+.branch_location_yandex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.branch_location_google img{
+    width: 100%;
+}
+
+.branch_location_yandex img{
+    width: 100%;
+}
+
+.branch_text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2D487D;
+    margin-top: 4px;
+}
+
+.branch_card_btn {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.branc_btn{
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: white;
+}
+
+
+@media (max-width:1080px) {
+    .branch_card_title{
+        font-size: 30px;
+        margin-top: 5px;
+        line-height: 35px;
+    }
+
+    .branch_card{
+        padding: 15px;
+    }
+
+    .branch_text{
+        font-size: 16px;
+    }
+
+    .branch_card_btn{
+        margin-top: 20px;
+    }
+
+    .branc_btn{
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width:970px) {
+    .branch{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:630px) {
+    .branch {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .branch_title{
+        margin-bottom: 40px;
+    }
+
+    .branch_card_title{
+        font-size: 24px;
+    }
+
+    .branc_btn{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:450px) {
+    .branch {
+        width: 90%;
+    }
+}
