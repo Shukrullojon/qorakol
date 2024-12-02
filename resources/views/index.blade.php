@@ -17,10 +17,10 @@
                             <p>1-9 sinf bolalari uchun</p>
                         </div>
                         <h1 class="hero_title reveal">
-                            Farzandingizni prezident maktablariga biz bilan tayyorlang
+                            FARZANDINGIZNI PREZIDENT MAKTABIGA VA UNIVERSITETLARGA BIZ BILAN TAYYORLANG
                         </h1>
                         <p class="hero_left_text reveal">
-                            Har yili eng kamida 90% o‘quvchisi talaba bo’ladi.
+                            2024-yili 95% abituriyentlarimiz talaba bo'lishdi
                         </p>
                         <div class="hero_left_btn reveal">
                             <a href="#enroll">
