@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="google-site-verification" content="x2YoycLziGU3tsrnwCTJVXZ_VhkYtEiKjIdRv9Yx4-4" />
+    <meta name="yandex-verification" content="0204a98ac36184e0" />
 
     <meta property="og:title" content="Qorakol Ziyo">
     <meta property="og:description" content="Farzandingizni prezident maktablariga biz bilan tayyorlang">
@@ -11,7 +13,25 @@
     <meta property="og:url" content="{{ url("/") }}">
     <meta property="og:type" content="website">
 
-    <title>Qorakol Ziyo</title>
+    <title>Prezident maktablariga va universitetlarga tayyorlov markazi - Qorako‘l Ziyo</title>
+    <meta name="description" content="Qorako‘l Ziyo – Prezident maktablari va universitetlarga kirish uchun sifatli tayyorgarlik kurslarini taklif etuvchi markaz. Biz bilan birga kelajagingizni yarating!">
+    <meta name="keywords" content="Prezident maktablari tayyorgarlik, universitetlarga tayyorlov, Qorako‘l Ziyo, ta'lim markazi, o‘quv kurslari">
+    <meta name="author" content="Qorako‘l Ziyo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Prezident maktablariga va universitetlarga tayyorlov markazi - Qorako‘l Ziyo">
+    <meta property="og:description" content="Qorako‘l Ziyo – Prezident maktablari va universitetlarga kirish uchun sifatli tayyorgarlik kurslarini taklif etuvchi markaz. Biz bilan birga kelajagingizni yarating!">
+    <meta property="og:url" content="https://qorakolziyo.uz/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://qorakolziyo.uz/path-to-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prezident maktablariga va universitetlarga tayyorlov markazi - Qorako‘l Ziyo">
+    <meta name="twitter:description" content="Qorako‘l Ziyo – Prezident maktablari va universitetlarga kirish uchun sifatli tayyorgarlik kurslarini taklif etuvchi markaz. Biz bilan birga kelajagingizni yarating!">
+    <meta name="twitter:image" content="https://qorakolziyo.uz/path-to-image.jpg">
+
     <link rel="icon" href="{{ asset("front/image/logo.png")}}"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -314,5 +334,7 @@
     });
     showQuestion();
 </script>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(99637201, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/99637201" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 </html>
