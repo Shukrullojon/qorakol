@@ -24,13 +24,13 @@
     <meta property="og:description" content="Qorako‘l Ziyo – Prezident maktablari va universitetlarga kirish uchun sifatli tayyorgarlik kurslarini taklif etuvchi markaz. Biz bilan birga kelajagingizni yarating!">
     <meta property="og:url" content="https://qorakolziyo.uz/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://qorakolziyo.uz/path-to-image.jpg">
+    <meta property="og:image" content="https://qorakolziyo.uz/front/image/logo.webp">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Prezident maktablariga va universitetlarga tayyorlov markazi - Qorako‘l Ziyo">
     <meta name="twitter:description" content="Qorako‘l Ziyo – Prezident maktablari va universitetlarga kirish uchun sifatli tayyorgarlik kurslarini taklif etuvchi markaz. Biz bilan birga kelajagingizni yarating!">
-    <meta name="twitter:image" content="https://qorakolziyo.uz/path-to-image.jpg">
+    <meta name="twitter:image" content="https://qorakolziyo.uz/front/image/logo.webp">
 
     <link rel="icon" href="{{ asset("front/image/logo.png")}}"/>
 
