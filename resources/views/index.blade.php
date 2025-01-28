@@ -97,7 +97,7 @@
                     <div class="qorakol">
                         <!-- Left Content -->
                         <div class="left_content">
-                            {{ $center->text }}
+                            {!! $center->text !!}
                             <div class="qorakol_btn_students">
                                 <a href="#enroll">
                                     <button class="btn qorakol_btn reveal">
